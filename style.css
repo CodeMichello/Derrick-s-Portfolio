@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.navbar {
+  @apply bg-dark mx-auto text-white flex justify-between px-[25rem] py-8 items-center;
+}
