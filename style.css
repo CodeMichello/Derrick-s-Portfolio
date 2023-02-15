@@ -11,3 +11,32 @@
 .navbar {
   @apply bg-dark mx-auto text-white flex justify-between px-[25rem] py-8 items-center;
 }
+
+/* .hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+.btn {
+  background-color: white;
+}
+
+.ht1,
+.ht2,
+.ht3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: red;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+} */
