@@ -15,42 +15,80 @@
   </head>
   <body class="font-poppins bg-dark">
     <!-- Navbar -->
-    <nav
-      class="bg-dark mx-auto text-white flex justify-between px-[25rem] py-8 items-center overflow-hidden"
-    >
-      <div id="logo" class="font-semibold text-3xl cursor-pointer">
-        <a href="index.html">Derrick Amenuve</a>
+    <nav>
+      <div
+        class="bg-dark mx-auto text-white flex justify-between xl:justify-between px-[25rem] py-8 items-center sm:px-8 md:px-10 xl:px-[15rem]"
+      >
+        <div
+          id="logo"
+          class="font-semibold lg:text-3xl cursor-pointer sm:text-xl sm:py-2 md:text-xl"
+        >
+          <a href="index.html">Derrick Amenuve</a>
+        </div>
+
+        <div id="menu-links" class="text-xl space-x-5 sm:hidden md:flex">
+          <a href="about.html" class="font-extralight hover:text-yellowish"
+            >About</a
+          >
+          <a href="works.html" class="font-extralight hover:text-yellowish"
+            >Works</a
+          >
+          <a
+            href="teach.html"
+            class="font-extralight hover:text-yellowish visited:text-yellowish"
+            >Teaching</a
+          >
+          <a href="contact.html" class="font-extralight hover:text-yellowish"
+            >Contact</a
+          >
+        </div>
+
+        <div id="menu" class="relative lg:hidden md:hidden">
+          <svg
+            fill="#ffffff"
+            width="40px"
+            height=""
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.5,7 C3.22385763,7 3,6.77614237 3,6.5 C3,6.22385763 3.22385763,6 3.5,6 L20.5,6 C20.7761424,6 21,6.22385763 21,6.5 C21,6.77614237 20.7761424,7 20.5,7 L3.5,7 Z M3.5,12 C3.22385763,12 3,11.7761424 3,11.5 C3,11.2238576 3.22385763,11 3.5,11 L20.5,11 C20.7761424,11 21,11.2238576 21,11.5 C21,11.7761424 20.7761424,12 20.5,12 L3.5,12 Z M3.5,17 C3.22385763,17 3,16.7761424 3,16.5 C3,16.2238576 3.22385763,16 3.5,16 L20.5,16 C20.7761424,16 21,16.2238576 21,16.5 C21,16.7761424 20.7761424,17 20.5,17 L3.5,17 Z"
+            />
+          </svg>
+        </div>
       </div>
-      <div id="menu" class="text-xl space-x-5">
-        <a href="about.html" class="font-extralight hover:text-yellowish"
+
+      <div
+        id="mobile"
+        class="text-xl space-x-5 text-white flex-col text-center hidden py-4 mx-[5rem] space-y-2 lg:hidden md:hidden"
+      >
+        <a href="about.html" class="font-light hover:text-yellowish ml-5"
           >About</a
         >
-        <a href="works.html" class="font-extralight hover:text-yellowish"
-          >Works</a
-        >
-        <a
-          href="teach.html"
-          class="font-extralight hover:text-yellowish visited:text-yellowish"
+        <a href="works.html" class="font-light hover:text-yellowish">Works</a>
+        <a href="teach.html" class="font-light hover:text-yellowish"
           >Teaching</a
         >
-        <a href="contact.html" class="font-extralight hover:text-yellowish"
+        <a href="contact.html" class="font-light hover:text-yellowish"
           >Contact</a
         >
       </div>
     </nav>
 
-    <section class="pt-16">
+    <section class="lg:pt-16 sm:pt-12">
       <div class="container text-white mx-auto">
-        <h1 class="ml-[12rem] text-[4rem] font-bold">Teaching</h1>
+        <h1 class="lg:ml-[12rem] text-[4rem] font-bold sm:text-[2rem]">
+          Teaching
+        </h1>
       </div>
       <div class="container text-gray font- mx-auto text-xl">
-        <p class="ml-[12rem] w-[850px]">
+        <p class="lg:ml-[12rem] lg:w-[850px] sm:mt-2">
           One of the ways that I’ve been trying to better help people in the
           creative communities is sharing my knowledge via webinars or in-person
           workshops at Rails Girls , HOPin Academy, Ispace , Nplec Foundation,
           etc. ​
         </p>
-        <p class="ml-[12rem] pt-8">
+        <p class="lg:ml-[12rem] pt-8">
           I hope to start mentoring sessions on
           <span class="text-yellowish underline">Adplist</span> soon.
         </p>
@@ -58,8 +96,11 @@
     </section>
 
     <section class="pt-[7rem]">
-      <div id="card-container" class="container flex mx-auto space-x-10">
-        <div id="card" class="ml-[12rem]">
+      <div
+        id="card-container"
+        class="container flex mx-auto lg:space-x-10 sm:flex-col sm:justify-center"
+      >
+        <div id="card" class="lg:ml-[12rem] sm:mx-auto">
           <div id="card-image">
             <img src="Assets/rails.png" alt="" />
           </div>
@@ -77,7 +118,7 @@
           </div>
         </div>
 
-        <div id="card">
+        <div id="card" class="sm:mx-auto sm:mt-6">
           <div id="card-image">
             <img src="Assets/design.png" alt="" />
           </div>
@@ -96,7 +137,7 @@
           </div>
         </div>
 
-        <div id="card">
+        <div id="card" class="sm:mx-auto sm:mt-6">
           <div id="card-image">
             <img src="Assets/peki.png" alt="" />
           </div>
@@ -119,16 +160,18 @@
 
     <section id="divider">
       <div class="container mx-auto py-[6rem]">
-        <hr class="text-gray w-[1024px] text-center mx-auto" />
+        <hr class="text-gray lg:w-[1024px] text-center mx-auto sm:w-[400px]" />
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="pb-[10rem]">
       <div
-        class="container mx-auto flex align-middle justify-center flex-col h-auto"
+        class="container mx-auto flex items-center justify-center flex-col h-auto"
       >
-        <h1 class="text-white text-[4.5rem] font-bold mx-auto">
+        <h1
+          class="text-white lg:text-[4.5rem] font-bold mx-auto sm:text-[3rem]"
+        >
           Let's Connect
         </h1>
         <p class="text-gray text-xl font-thin mx-auto mt-2">
@@ -146,5 +189,7 @@
         <img src="Assets/blog.svg" alt="Blog" />
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
